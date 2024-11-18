@@ -1,22 +1,17 @@
-import './App.css';
-import Header from './components/Header';
-import Main from './components/Main';
-import Footer from './components/Footer';
-import Courseitem from './components/Courseitem';
-import CourseListCard from './components/course/CourseListCard';
+import "./App.css";
+import Header from "./components/Header";
+import Main from "./components/Main";
+import Footer from "./components/Footer";
+import Courseitem from "./components/course/Courseitem";
+import CourseListCard from "./components/course/CourseListCard";
+import Library from "./components/step01/Library";
 
-/* function Header() {
+/*
+function Header() {
   return(
     <header>
       <h2>Header</h2>
     </header>
-  );
-}
-function Footer() {
-  return(
-    <Footer>
-      <h2>Footer</h2>
-    </Footer>
   );
 }
 
@@ -27,71 +22,87 @@ function Main() {
     </main>
   );
 }
-*/
 
-// 파스칼 케이스 사용해야 된다.(첫글자 대문자 단어 첫글자 대문자)
-function Counter() {
-  return (
-    <button>Counter</button>
+function Footer() {
+  return(
+    <footer>
+      <h2>Footer</h2>
+    </footer>
   );
 }
 
-
-// 리엑트에서는 class예약어이기 때문에 사용 못하고,
-// class대신 className 이라고 사용한다.
-
-/*
-1단계
-<main>
-		<div class="card">
-			<div class="card__header">강의 목록</div>
-			<div class="card__body">
-				<div class="courses">
-					<article class="course">
-						<img class="course__img" src="./img/coffee-blue.jpg" alt="" />
-						<div class="course__body">
-							<div class="course__title">입문자를 위한, HTML&CSS 웹 개발 입문</div>
-							<div class="course__description">웹 개발에 필요한 기본 지식을 배웁니다. </div>
-						</div>
-					</article>
-					<article class="course">
-						<img class="course__img" src="./img/coffee-blue.jpg" alt="" />
-						<div class="course__body">
-							<div class="course__title">입문자를 위한, HTML&CSS 웹 개발 입문</div>
-							<div class="course__description">웹 개발에 필요한 기본 지식을 배웁니다. </div>
-						</div>
-					</article>
-					<article class="course">
-						<img class="course__img" src="./img/coffee-blue.jpg" alt="" />
-						<div class="course__body">
-							<div class="course__title">입문자를 위한, HTML&CSS 웹 개발 입문</div>
-							<div class="course__description">웹 개발에 필요한 기본 지식을 배웁니다. </div>
-						</div>
-					</article>
-				</div>
-			</div>
-		</div>
-	</main>
-  */
-
-  // 2단계
-  
+// 파스칼 케이스 사용해야 된다.(첫 글자 대문자 단어 첫 글자 대문자)
+function Counter() {
+  return(
+    <button>Counter</button>
+  );
+}
+*/
+// 리액트에서는 class는 예약어이기 때문에 사용 못하고,
+// class 대신 className이라고 사용한다.
+function App() {
+  return (
+    <div className="App">
+    {/*
     <main>
-  
-		  {/* <div className="card">
-			  <div className="card__header">강의 목록</div>
-			  <div className="card__body">
-				  <div className="courses">
-            <Courseitem />
-            <Courseitem />
-            <Courseitem />
+    <Header />
+    <Main />
+    <Footer /> 
+
+    1. js 부분 전체 붙여 넣기
+    <main>
+      <div class="card">
+         <div class="card__header">강의 목록</div>
+         <div class="card__body">
+            <div class="courses">
+               <article class="course">
+                  <img class="course__img" src="./img/coffee-blue.jpg" alt="" />
+                  <div class="course__body">
+                     <div class="course__title">입문자를 위한, HTML&CSS 웹 개발 입문</div>
+                     <div class="course__description">웹 개발에 필요한 기본 지식을 배웁니다. </div>
+                  </div>
+               </article>
+               <article class="course">
+                  <img class="course__img" src="./img/coffee-blue.jpg" alt="" />
+                  <div class="course__body">
+                     <div class="course__title">입문자를 위한, HTML&CSS 웹 개발 입문</div>
+                     <div class="course__description">웹 개발에 필요한 기본 지식을 배웁니다. </div>
+                  </div>
+               </article>
+               <article class="course">
+                  <img class="course__img" src="./img/coffee-blue.jpg" alt="" />
+                  <div class="course__body">
+                     <div class="course__title">입문자를 위한, HTML&CSS 웹 개발 입문</div>
+                     <div class="course__description">웹 개발에 필요한 기본 지식을 배웁니다. </div>
+                  </div>
+               </article>
+            </div>
          </div>
-        </div>
-      </div> */}
-      
+      </div>
+   </main>
+
+   2. 2단계 CourseListCard.jsx 에 보낸다.
+        <div class="card">
+           <div class="card__header">강의 목록</div>
+           <div class="card__body">
+           <div class="courses">
+        {/* 
+        2단계 중복되는 부분 <article></article>
+          <Courseitem />
+          <Courseitem />
+          <Courseitem />
+          3단계. 중복되는 부분을 List 형태로 전부 담을 수 있다.
+      </div>
+    </div>
+    </div> 
+    3단계. 중복되는 부분을 List 형태로 전부 담을 수 있다.
       <CourseListCard />
     </main>
-    
+     */}
+
+      <Library />
+      
+    </div>
   );
 }
 

@@ -8,13 +8,10 @@ function CourseListCard() {
 				  <div className="courses">
                     <Courseitem />
                     <Courseitem />
-                    <Courseitem />
-                    
+                    <Courseitem />                   
                   </div>
               </div>
-        </div>
-            
-        
+        </div>       
     );
 }
 
