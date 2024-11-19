@@ -9,6 +9,8 @@ import PackingList from './components/step05/PackingList';
 import TextList from './components/step06/TextList';
 import TextList2 from './components/step06/TextList';
 import TextList3 from './components/step06/TextList';
+import Event01 from './components/step07/Event01';
+import Event02 from './components/step07/Event02';
 
 
 function App() {
@@ -36,7 +38,7 @@ function App() {
   // 조건부 렌더링 : if, &&, 삼항연산자(조건식? 참:거짓)
   const ischk = false;
   return (
-    <div className='App'>
+    <>
       {ischk ? <h2>Hello, react</h2> : <CourseListCard items={items} /> }
       <hr />
       <PackingList />
@@ -48,7 +50,13 @@ function App() {
       <TextList2 />
       <hr />
       <TextList3 />
-    </div>
+      <hr />
+      <Event01 />
+      <hr />
+      <Event02 />
+
+      <br /><br /><br /><br /><br /><br />
+    </>
   );
 }
 
