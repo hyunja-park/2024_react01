@@ -1,4 +1,19 @@
-import React from 'react';
+import CourseItem from './CourseItem';
+
+function HeartIconBtn({isFavorite=false}) {
+    if (isFavorite) {
+        return(
+            <button className='btn'>
+                <img className='btn_img' src='./img/heart-fill-icon.svg' />
+            </button>
+        )
+    }
+    return(
+        <button className='btn'>
+            <img className='btn_img' src='./img/heart-icon.svg' />
+        </button>
+    )
+}
 
 function CourseListCard({ items }) {
     const [course1, course2, course3] = items;
@@ -11,8 +26,9 @@ function CourseListCard({ items }) {
                       <CourseItem {...course2} />
                       <CourseItem {...course3} />        
                   </div>
-              </div>
-        </div> 
+              </div>               
+        </div>
+         
     );
 }
 
