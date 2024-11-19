@@ -5,6 +5,8 @@ import Footer from './components/Footer';
 import Courseitem from './components/course/Courseitem';
 import CourseListCard from './components/step04/CourseListCard';
 import Library from './components/step01/Library';
+import PackingList from './components/step05/PackingList';
+import TextList from './components/step06/TextList';
 
 
 function App() {
@@ -27,10 +29,20 @@ function App() {
     ]
    
   // 조건부 렌더링 : if, &&, 삼항연산자(조건식? 참:거짓)
-  const ischk = true;
+  const ischk = false;
   return (
     <div className='App'>
-      {ischk ? <h1>Hello, react</h1> : <CourseListCard items={items} /> }
+      {ischk ? <h2>Hello, react</h2> : <CourseListCard items={items} /> }
+      <hr />
+      <PackingList />
+      <hr />
+      <h1> 키가 없어 오류 발생</h1>
+      <TextList />
+      <hr />
+      <h1>키가 존재한다.</h1>
+      <TextList2 />
+      <hr />
+      <TextList3 />
     </div>
   );
 }
