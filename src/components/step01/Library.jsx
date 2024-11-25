@@ -3,10 +3,10 @@ import Book from './Book';
 
 function Library(props) {
     return (
-        <div>           
-            <Book name="처음 만난 리엑트"  numOfPage="300"  />
-            <Book name="처음 만난 스프링부트"  numOfPage="550"  />
-            <Book name="처음 만난 MySQL"  numOfPage="250"  />
+        <div className='App'>           
+           <Book name="처음 만난 React" numOfPage="150" /> <hr />
+            <Book name="처음 만난 SpringBoot" numOfPage="550" />  <hr />
+            <Book name="처음 만난 MySQL" numOfPage="250" />  <hr />
         </div>
     );
 }

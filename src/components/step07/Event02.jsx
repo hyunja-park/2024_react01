@@ -5,7 +5,7 @@
 // 동적인 내용을 전달할 수 있다.
 function AlertButten({message, Children}) {
     return (
-        <button onClick={()=>alert(message)}>
+        <button onClick={() => alert(message)}>
             {Children}
         </button>
     );
@@ -13,9 +13,9 @@ function AlertButten({message, Children}) {
 
 function Event02(props) {
     return (
-        <div>
-            <AlertButten message="play">PlayButten</AlertButten>
-            <AlertButten message="upload">UploadButten</AlertButten>
+        <div className="App">
+            <AlertButten message="play">PlayButten</AlertButten><br /><br />
+            <AlertButten message="upload">UploadButten</AlertButten><br /><br />
         </div>
     );
 }

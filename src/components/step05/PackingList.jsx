@@ -12,7 +12,7 @@ function PackingList(props) {
                 />
                 <Item 
                     isPacked={false}
-                    name="둘ㄹ;"
+                    name="둘리"
                 />
                 <Item 
                     isPacked={true}

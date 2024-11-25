@@ -9,11 +9,11 @@ function Event01(props) {
         alert("눌렀네")
     }
     return (
-        <>
-            <button onClick={heandleClick}>Click me</button>
-            <button onClick={function heandleClick2(){ alert("눌렀네2") }}>눌러주세요2</button>
-            <button onClick={() => { alert("눌렀네3") }}>눌러주세요3</button>
-        </>
+        <div className='App'>
+            <button onClick={heandleClick}>Click me</button><br /><br />
+            <button onClick={function heandleClick2(){ alert("눌렀네2") }}>눌러주세요2</button><br /><br />
+            <button onClick={() => { alert("눌렀네3") }}>눌러주세요3</button><br /><br />
+        </div>
     );
 }
 

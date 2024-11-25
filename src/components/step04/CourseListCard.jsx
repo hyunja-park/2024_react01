@@ -1,4 +1,4 @@
-import CourseItem from './CourseItem';
+import CourseItem from './CourseListCard';
 
 function HeartIconBtn({isFavorite=false}) {
     if (isFavorite) {

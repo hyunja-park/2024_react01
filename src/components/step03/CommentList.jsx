@@ -1,5 +1,8 @@
 import React from 'react';
-const comment = [
+import Comment from './Comment';
+
+// 나중에 DB
+const comments = [
     {
         name: "홍길동",
         comment : "방가 방가"
@@ -24,7 +27,7 @@ function CommentList(props) {
     return (
         <div>
             {
-                comments.map((k) =>{
+                comments.map((k) => {
                     return(
                        <Comment name={k.name} comment={k.comment} />
                     );
